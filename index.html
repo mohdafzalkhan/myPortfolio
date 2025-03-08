@@ -5,171 +5,303 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohd Afzal Khan - Resume</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Background Image -->
-  <div class="background-image" ></div>
+  <style>
+    /* Apply Google Fonts */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+    }
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #0d6efd; /* Bootstrap primary color */
+      border-bottom: 2px solid #0d6efd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .lead {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #495057; /* Dark gray for better readability */
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #343a40; /* Dark text for headings */
+    }
+    .card-text {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #6c757d; /* Gray for body text */
+    }
+    .list-group-item {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #343a40; /* Dark text for list items */
+    }
 
+    /* Dark Theme */
+    .dark-theme {
+      background-color: #343a40; /* Dark background */
+      color: #f8f9fa; /* Light text */
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    .dark-theme .section-title {
+      color: #0dcaf0; /* Cyan color for section titles */
+      border-bottom: 2px solid #0dcaf0;
+    }
+    .dark-theme .card-custom {
+      background-color: #495057; /* Slightly lighter dark background for cards */
+      border: none;
+      color: #f8f9fa; /* Light text */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .dark-theme .card-title {
+      color: #f8f9fa; /* Light text for headings */
+    }
+    .dark-theme .card-text {
+      color: #dee2e6; /* Light gray for body text */
+    }
+    .dark-theme .list-group-item {
+      background-color: #495057; /* Match card background */
+      color: #f8f9fa; /* Light text */
+      border: none;
+    }
+
+    /* Light Theme */
+    .light-theme {
+      background-color: #f8f9fa; /* Light background */
+      color: #343a40; /* Dark text */
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    }
+    .light-theme .card-custom {
+      background-color: #ffffff; /* White background for cards */
+      border: none;
+      color: #343a40; /* Dark text */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Profile Image */
+    .profile-image img {
+      border: 4px solid #0dcaf0; /* Cyan border for profile image */
+    }
+
+    /* Links */
+    a {
+      color: #0dcaf0; /* Cyan color for links */
+      text-decoration: none;
+    }
+    a:hover {
+      color: #0d6efd; /* Bootstrap primary color on hover */
+    }
+  </style>
+</head>
+<body class="bg-light">
   <div class="container my-5">
-    <!-- Header Section with Profile Image -->
-    <header class="text-center mb-5 position-relative">
-      <!-- Profile Image -->
-      <div class="profile-image">
-        <img src="pic.jpg" alt="Mohd Afzal Khan" class="rounded-circle">
+    <!-- Header Section (Dark Theme) -->
+    <header class="dark-theme text-center mb-5">
+      <div class="profile-image mb-3">
+        <img src="pic.jpg" alt="Mohd Afzal Khan" class="rounded-circle img-thumbnail" style="width: 150px; height: 150px;">
       </div>
       <h1 class="display-4">Mohd Afzal Khan</h1>
       <p class="lead">Address: 461/219 Murg Khana, Near Banyan Tree, Husainabad, Lucknow - 226003</p>
       <p class="lead">Mobile: +91 – 7309153509 | Email: mohammadafzalkhanking@gmail.com</p>
-      <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/mohd-afzal-khan-6191bb193" target="_blank" class="text-decoration-none">LinkedIn Profile</a></p>
+      <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/mohd-afzal-khan-6191bb193" target="_blank">LinkedIn Profile</a></p>
       <p class="lead">Skype ID: mohdafzalkhanking</p>
     </header>
 
-    <!-- Rest of the Resume Sections -->
-    <!-- Career Objective -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">CAREER OBJECTIVE</h2>
+    <!-- Career Objective (Light Theme) -->
+    <section class="light-theme mb-5">
+      <h2 class="section-title">CAREER OBJECTIVE</h2>
       <p class="lead">To gain experience in the field of Information Technology and also utilize my academic skills, in order to increase productivity of organization and individual growth.</p>
     </section>
 
-    <!-- Academic Details -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">ACADEMIC DETAILS</h2>
-      <div class="table-responsive">
-        <table class="table table-bordered table-striped">
-          <thead class="table-dark">
-            <tr>
-              <th>Course</th>
-              <th>Institution</th>
-              <th>Board/University</th>
-              <th>Year of Passing</th>
-              <th>Percentage/CGPA</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>MCA</td>
-              <td>REVA University</td>
-              <td>University</td>
-              <td>2025</td>
-              <td>Pursuing</td>
-            </tr>
-            <tr>
-              <td>BCA</td>
-              <td>REVA University</td>
-              <td>University</td>
-              <td>2021</td>
-              <td>8.77</td>
-            </tr>
-            <tr>
-              <td>SSC</td>
-              <td>Bal Vidya Mandir Senior Secondary School</td>
-              <td>CBSE</td>
-              <td>2018</td>
-              <td>60.4%</td>
-            </tr>
-            <tr>
-              <td>High School</td>
-              <td>Baby Martin Public School Lucknow Uttar Pradesh</td>
-              <td>CBSE</td>
-              <td>2016</td>
-              <td>8.8</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">EXPERIENCE</h2>
-      <p class="lead"><strong>Test Engineer</strong> (June 2021 – February 2022)</p>
-      <ul class="list-group">
-        <li class="list-group-item">Partnered with design team to review specifications and offer feedback from engineering standpoint or direct testing results.</li>
-        <li class="list-group-item">Maintained technical schematics, software documentation, and configuration control instructions for deliverables.</li>
-        <li class="list-group-item">Managed comprehensive device debugging, design validation, and failure analysis.</li>
-        <li class="list-group-item">Developed test plans and procedures based on project requirements.</li>
-        <li class="list-group-item">Worked on automation testing simultaneously.</li>
-      </ul>
-    </section>
-
-    <!-- Projects -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">PROJECT DETAILS</h2>
-      <div class="list-group">
-        <div class="list-group-item">
-          <h5 class="mb-1">Project 1: Women Safety Application</h5>
-          <p class="mb-1">Created for women to provide additional security by sending their locations to their loved ones. The app was developed using Android Studio with Java.</p>
+    <!-- Academic Details (Dark Theme) -->
+    <section class="dark-theme mb-5">
+      <h2 class="section-title">ACADEMIC DETAILS</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="card card-custom">
+            <div class="card-body">
+              <h5 class="card-title">MCA</h5>
+              <p class="card-text"><strong>Institution:</strong> REVA University</p>
+              <p class="card-text"><strong>Board/University:</strong> University</p>
+              <p class="card-text"><strong>Year of Passing:</strong> 2025</p>
+              <p class="card-text"><strong>Status:</strong> Pursuing</p>
+            </div>
+          </div>
         </div>
-        <div class="list-group-item">
-          <h5 class="mb-1">Project 2: Coronavirus Guide and Track (CGAT)</h5>
-          <p class="mb-1">Created to track the spread of coronavirus around India. The app was developed using Visual Studio Code with Dart.</p>
+        <div class="col-md-6 mb-3">
+          <div class="card card-custom">
+            <div class="card-body">
+              <h5 class="card-title">BCA</h5>
+              <p class="card-text"><strong>Institution:</strong> REVA University</p>
+              <p class="card-text"><strong>Board/University:</strong> University</p>
+              <p class="card-text"><strong>Year of Passing:</strong> 2021</p>
+              <p class="card-text"><strong>CGPA:</strong> 8.77</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card card-custom">
+            <div class="card-body">
+              <h5 class="card-title">SSC</h5>
+              <p class="card-text"><strong>Institution:</strong> Bal Vidya Mandir Senior Secondary School</p>
+              <p class="card-text"><strong>Board/University:</strong> CBSE</p>
+              <p class="card-text"><strong>Year of Passing:</strong> 2018</p>
+              <p class="card-text"><strong>Percentage:</strong> 60.4%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card card-custom">
+            <div class="card-body">
+              <h5 class="card-title">High School</h5>
+              <p class="card-text"><strong>Institution:</strong> Baby Martin Public School Lucknow Uttar Pradesh</p>
+              <p class="card-text"><strong>Board/University:</strong> CBSE</p>
+              <p class="card-text"><strong>Year of Passing:</strong> 2016</p>
+              <p class="card-text"><strong>CGPA:</strong> 8.8</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Technical Skills -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">TECHNICAL SKILLS</h2>
-      <ul class="list-group">
-        <li class="list-group-item">MS Office Word</li>
-        <li class="list-group-item">MS Office PowerPoint</li>
-        <li class="list-group-item">MS Office Excel</li>
-        <li class="list-group-item">JavaScript</li>
-        <li class="list-group-item">Operating Systems: Windows (XP, Vista, 7, 8.1, 10), Kali Linux</li>
-        <li class="list-group-item">Programming Languages: Python, C, C++, Core Java</li>
-      </ul>
+    <!-- Experience (Light Theme) -->
+    <section class="light-theme mb-5">
+      <h2 class="section-title">EXPERIENCE</h2>
+      <div class="card card-custom">
+        <div class="card-body">
+          <h5 class="card-title">Test Engineer (June 2021 – February 2022)</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Partnered with design team to review specifications and offer feedback from engineering standpoint or direct testing results.</li>
+            <li class="list-group-item">Maintained technical schematics, software documentation, and configuration control instructions for deliverables.</li>
+            <li class="list-group-item">Managed comprehensive device debugging, design validation, and failure analysis.</li>
+            <li class="list-group-item">Developed test plans and procedures based on project requirements.</li>
+            <li class="list-group-item">Worked on automation testing simultaneously.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Co-Curricular Activities -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">CO-CURRICULAR ACTIVITIES</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Participated in Hackathon.</li>
-        <li class="list-group-item">Successfully completed the ‘Pearson Global English Certification’ course conducted at REVA University.</li>
-        <li class="list-group-item">Successfully completed the ‘Star Cyber Secure User’ course.</li>
-        <li class="list-group-item">Successfully completed the ‘SYBGEN Machine Learning Boot Camp’ course.</li>
-        <li class="list-group-item">Successfully completed the ‘Building a Dynamic Web App using PHP & MySQL’ course.</li>
-        <li class="list-group-item">Successfully completed the ‘Adobe Photoshop Beginning to Advanced’ course.</li>
-      </ul>
+    <!-- Projects (Dark Theme) -->
+    <section class="dark-theme mb-5">
+      <h2 class="section-title">PROJECT DETAILS</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="card card-custom">
+            <div class="card-body">
+              <h5 class="card-title">Project 1: Women Safety Application</h5>
+              <p class="card-text">Created for women to provide additional security by sending their locations to their loved ones. The app was developed using Android Studio with Java.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card card-custom">
+            <div class="card-body">
+              <h5 class="card-title">Project 2: Coronavirus Guide and Track (CGAT)</h5>
+              <p class="card-text">Created to track the spread of coronavirus around India. The app was developed using Visual Studio Code with Dart.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Extra-Curricular -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">EXTRA-CURRICULAR</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Cricket</li>
-        <li class="list-group-item">Yoga</li>
-        <li class="list-group-item">Jogging</li>
-        <li class="list-group-item">Basketball</li>
-      </ul>
+    <!-- Technical Skills (Light Theme) -->
+    <section class="light-theme mb-5">
+      <h2 class="section-title">TECHNICAL SKILLS</h2>
+      <div class="card card-custom">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">MS Office Word</li>
+            <li class="list-group-item">MS Office PowerPoint</li>
+            <li class="list-group-item">MS Office Excel</li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">Operating Systems: Windows (XP, Vista, 7, 8.1, 10), Kali Linux</li>
+            <li class="list-group-item">Programming Languages: Python, C, C++, Core Java</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Hobbies -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">HOBBIES</h2>
-      <p class="lead">Reading Books, Movies, Listening to Music, Playing Computer Games</p>
+    <!-- Co-Curricular Activities (Dark Theme) -->
+    <section class="dark-theme mb-5">
+      <h2 class="section-title">CO-CURRICULAR ACTIVITIES</h2>
+      <div class="card card-custom">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Participated in Hackathon.</li>
+            <li class="list-group-item">Successfully completed the ‘Pearson Global English Certification’ course conducted at REVA University.</li>
+            <li class="list-group-item">Successfully completed the ‘Star Cyber Secure User’ course.</li>
+            <li class="list-group-item">Successfully completed the ‘SYBGEN Machine Learning Boot Camp’ course.</li>
+            <li class="list-group-item">Successfully completed the ‘Building a Dynamic Web App using PHP & MySQL’ course.</li>
+            <li class="list-group-item">Successfully completed the ‘Adobe Photoshop Beginning to Advanced’ course.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Languages Known -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">LANGUAGES KNOWN</h2>
-      <p class="lead">English, Hindi, Urdu</p>
+    <!-- Extra-Curricular (Light Theme) -->
+    <section class="light-theme mb-5">
+      <h2 class="section-title">EXTRA-CURRICULAR</h2>
+      <div class="card card-custom">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cricket</li>
+            <li class="list-group-item">Yoga</li>
+            <li class="list-group-item">Jogging</li>
+            <li class="list-group-item">Basketball</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Personal Details -->
-    <section class="mb-5">
-      <h2 class="text-primary mb-3">PERSONAL DETAILS</h2>
-      <p class="lead">Father's Name: Mohd Sami Khan</p>
-      <p class="lead">Date of Birth: 10/03/2000</p>
+    <!-- Hobbies (Dark Theme) -->
+    <section class="dark-theme mb-5">
+      <h2 class="section-title">HOBBIES</h2>
+      <div class="card card-custom">
+        <div class="card-body">
+          <p class="list-group-item">Reading Books, Movies, Listening to Music, Playing Computer Games</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages Known (Light Theme) -->
+    <section class="light-theme mb-5">
+      <h2 class="section-title">LANGUAGES KNOWN</h2>
+      <div class="card card-custom">
+        <div class="card-body">
+          <p class="lead" >English, Hindi, Urdu</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Details (Dark Theme) -->
+    <section class="dark-theme mb-5">
+      <h2 class="section-title">PERSONAL DETAILS</h2>
+      <div class="card card-custom">
+        <div class="card-body" >
+          <p class="lead" style="color: white;">Father's Name: Mohd Sami Khan</p>
+          <p class="lead" style="color: white;">Date of Birth: 10/03/2000</p>
+        </div>
+      </div>
     </section>
   </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
-  <script src="script.js"></script>
 </body>
 </html>
